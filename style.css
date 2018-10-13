@@ -1,0 +1,137 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #e2e2e2; 
+}
+
+/* CAROUSEL SLIDESHOW */
+.home-slideshow img {
+   margin: auto;
+   width: 100%;
+}
+.carousel-caption{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 5vw;
+    opacity: 0.90;
+    top: 0;
+    padding: 10px;
+}
+
+/* NAVIGATION BAR */
+.navBar{
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    padding: 0;
+    background-color: #202121;
+    width: 100%;
+    z-index:1;
+}
+.navBar {float: left;}
+.navBar a.right {float: right;}
+.navBar a {
+    display: inline-block;
+    color: white;
+    padding: 15px 22px;
+    text-decoration: none;
+}
+.navBar a:hover {
+    background: rgba(73, 78, 117, 0.3)
+}
+
+
+.home-content{
+    background-color: white;
+    margin: 2% 5% 5%;
+    padding: 2% 5% 5%;
+    text-align: center;
+}
+
+.home-content p{
+    font-size: 1.1em;
+}
+
+.welcome-vid{
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.welcome-vid iframe {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.aotea-info h2{
+    font-family: 'Playball', cursive;
+    font-size: 4vw;
+}
+
+.learn-maori {
+    text-align: center;
+}
+
+.learn-maori h3{
+    color: red;
+}
+
+#koru{
+    position: relative;
+    width: 50%;
+}
+
+
+/* FINAL IMAGE AND LINK ON HOME PAGE */
+.airNZ img {
+    width: 100%;
+    opacity: 0.75;
+    border-radius: 10px;
+}
+.airNZ{
+    position: relative;
+    text-align: center;
+}
+.airNZ a{
+    opacity: 0.75;
+    background-color: #e2e2e2;
+    padding: 1%;
+    border: 2px solid #5b5f63;
+    border-radius: 3px;
+    font-size: 2vw;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.airNZ a:hover{
+    color: #5b86b2;
+}
+
+/* WHO'S THERE PAGE */
+.contact-form input[type = text], select{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.contact-form input[type = submit]{
+    color: white;
+    background-color: #202121;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.contact-form input[type = submit]:hover{
+    background-color: #474949;
+}
+
+@media (max-width: 300px){
+    .navBar a, .navBar a.right{
+        float: none;
+    }
+}

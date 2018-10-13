@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Christopher Corbett
+EMAIL: corbettc@uci.edu
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <nav class="navBar">
+        <a href="index.html"><i class="fa fa-home"></i></a>
+        <a class="right" href="form.html">Who's there?</a>
+    </nav>
+
+    <br><br><br><br>
+
+    <div class="home-content">
+
+        <div class="contact-form">
+            <form>
+                <label>First Name </label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Your first name..">
+                <br><br>
+                <label>Last Name </label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Your last name..">
+                <br><br>
+                <label>Age Group </label>
+                    <select style = "width:40%" id="age" name="age">
+                        <option value="Be nice to your elders..."> 18 and Under </option>
+                        <option value="Keep grinding fam." selected="selected"> 19 - 29</option>
+                        <option value="You're not even 15,000 days old yet!"> 30 - 39 </option>
+                        <option value="You're halfway there!"> 40 - 49 </option>
+                        <option value="The big five - 0!"> 50 + </option>
+                    </select>
+                <br><br><br>
+                <input type="submit" value = "Submit" onclick="contactInfo(); return false">
+            </form>
+        </div>
+
+        <br><br>
+
+        <p id = "displayName"></p>
+        <p id = "displayAge"></p>
+
+    </div>
+
+    <footer style="text-align: center">Who's There | Assignment 1 | Informatics 133 | University of California - Irvine |
+        Christopher Corbett | #44853626</footer>
+    <br>
+
+</body>
+
+</html>
